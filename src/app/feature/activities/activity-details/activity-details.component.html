@@ -1,0 +1,63 @@
+<!--Carousel Wrapper-->
+
+<activity-details-slider></activity-details-slider>
+
+<h5 style="color: #EA7424">{{activity.name}}</h5>
+<br>
+<!--/.Carousel Wrapper-->
+<!-- Classic tabs -->
+<div class="classic-tabs mx-2" style="margin-bottom: 150px;">
+
+    <ul class="nav tabs-orange" id="myClassicTabOrange" role="tablist">
+        <li class="nav-item icon-item">
+            <a class="nav-link  waves-light active show" id="profile-tab-classic-orange" data-toggle="tab" href="#profile-classic-orange" role="tab" aria-controls="profile-classic-orange" aria-selected="true"><i
+                class="far fa-question-circle fa-2x pb-2"></i><br>Information</a>
+        </li>
+        <li class="nav-item icon-item">
+            <a class="nav-link waves-light" id="awesome-tab-classic-orange" data-toggle="tab" href="#awesome-classic-orange" role="tab" aria-controls="awesome-classic-orange" aria-selected="false"><i
+                    class="fas fa-location-arrow fa-2x pb-2"></i><br>Location</a>
+        </li>
+        <li class="nav-item icon-item">
+            <a class="nav-link waves-light" id="follow-tab-classic-orange" data-toggle="tab" href="#follow-classic-orange" role="tab" aria-controls="follow-classic-orange" aria-selected="false"><i class="fas fa-heart fa-2x pb-2"
+                aria-hidden="true"></i><br>Follow</a>
+        </li>
+
+
+    </ul>
+
+    <div class="tab-content card" id="myClassicTabContentOrange">
+        <div class="tab-pane fade active show" id="profile-classic-orange" role="tabpanel" aria-labelledby="profile-tab-classic-orange">
+            <p>{{activity.description}}</p>
+        </div>
+
+
+        <div class="tab-pane fade" id="awesome-classic-orange" role="tabpanel" aria-labelledby="awesome-tab-classic-orange">
+            <p>{{activity.address}}</p>
+        </div>
+        <div class="tab-pane fade" id="follow-classic-orange" role="tabpanel" aria-labelledby="follow-tab-classic-orange">
+            <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel
+                illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+        </div>
+    </div>
+
+</div>
+<!-- Classic tabs -->
+<!--Carousel Wrapper-->
+<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+
+    <div class="controls-top">
+        <div class="ReviewsSection">
+            <p>All Reviews</p>
+        </div>
+
+    </div>
+    <div class="container my-5">
+
+        <activity-details-review-card-listing [reviews]="activity.reviews"></activity-details-review-card-listing>
+
+    </div>
+
+</div>
+<!-- <reviews-listing [Reiviews]="activity.reviews"></reviews-listing> -->
+<add-review></add-review>

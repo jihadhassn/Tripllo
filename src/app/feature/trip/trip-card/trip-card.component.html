@@ -1,0 +1,14 @@
+<div class="card mb-3" style="margin-top: 1rem; ">
+    <div class="row no-gutters">
+        <div class="col-md-4">
+            <img [src]="tripData.image" class="card-img" alt="..." style="width:100%;height: 100%">
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">{{tripData.name}}</h5>
+                <a href="#" class="card-link rounded-pill">Brows</a>
+                <button href="#" class=" btn order-link" (click)="OnAddToOrder()">Add To order</button>
+            </div>
+        </div>
+    </div>
+</div>

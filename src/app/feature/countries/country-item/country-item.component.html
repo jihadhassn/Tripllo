@@ -1,0 +1,19 @@
+<div class="col-lg-4 col-md-5 card-overlay__image-col mb-4">
+    <div class="AddToTrip-btn" (click)="OnAdd()">
+        <i class="fas fa-plus"></i>
+    </div>
+    <div class="icon-text">
+        <p>Add To My Trip</p>
+    </div>
+    <div class="card-overlay__overlay-container">
+        <a [routerLink]="['/countries',country.id]">
+            <div class="card-overlay__centered">{{country.name}}</div>
+            <img class="card-overlay__image-card" [src]="country.image">
+
+            <div class="card-overlay__overlay">
+                <h5 class="card-overlay__overlay-text-header">{{country.name}}</h5>
+                <p class="card-overlay__overlay-text">{{country.description}}</p>
+            </div>
+        </a>
+    </div>
+</div>

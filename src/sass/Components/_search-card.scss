@@ -1,0 +1,175 @@
+h1 {
+    font-size: 12px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 12px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+p {
+    font-size: 14px;
+}
+
+img {
+    width: 100%;
+}
+
+.search-card {
+    background-color: $third-color;
+    border: 1px;
+    border-color: $third-color;
+}
+
+.btn-primary {
+    color: $primary-color !important;
+    background-color: $secondry-color !important;
+    border-color: $secondry-color !important;
+
+    &:hover {
+        background-color: $third-color !important;
+        color: $secondry-color !important;
+        border-color: $third-color !important;
+
+    }
+}
+
+.Searchcard {
+    background-color: $primary-color;
+}
+
+
+.icon-text {
+    display: none;
+    transform: scale(-1);
+
+}
+
+.AddToTrip-btn {
+    position: absolute;
+    background-color: $secondry-color;
+    height: 40px;
+    width: 40px;
+    z-index: 10;
+    color: $third-color;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        background-color: $third-color;
+        color: $secondry-color;
+        transform: scale(1.1);
+        transition: all .2s ease-in-out;
+
+        +.icon-text {
+            transition: all .2s ease-in-out;
+            transform: scale(1);
+            display: block;
+            position: absolute;
+            left: 57px;
+            top: -2px;
+            z-index: 10;
+            height: 25px;
+            background-color: $third-color;
+
+            p {
+                color: $secondry-color;
+            }
+        }
+    }
+}
+
+.fa-plus {
+    font-size: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 10px;
+    right: 12px;
+}
+
+.Searchcard h4 {
+    position: relative;
+    top: 55% !important;
+    left: 5% !important;
+    color: $secondry-color !important;
+    border: 1px;
+    border-color: $third-color;
+}
+
+.nav-link {}
+
+.nav-link.active {
+    color: $primary-color !important;
+    background-color: $secondry-color !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: $primary-color !important;
+    margin-right: 25px;
+    font-size: 1;
+    font-weight: 700;
+
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: black !important;
+}
+
+a.text-dark {
+    color: $primary-color !important;
+}
+
+.text-sec {
+    color: $secondry-color !important;
+    font-family: $primary-font;
+}
+
+.form-group {
+    margin: 2rem;
+}
+
+.searchForm {
+    background-color: $third-color !important;
+    margin: 20px;
+    border-radius: 15px 50px 30px 5px;
+}
+
+.searchHeader {
+    padding-top: 20px;
+}
+
+.searchPart {
+    margin-top: 20px;
+}
+
+.basic-line {
+    height: 1px;
+    background-color: $third-color;
+}
+
+.ScrollPart {
+    margin: 20px;
+}
+
+.checkst {
+    margin: 5px;
+}

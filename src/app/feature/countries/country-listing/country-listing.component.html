@@ -1,0 +1,4 @@
+<div class="container card-overlay text-center pt-3">
+    <country-item *ngFor="let newcountry of data" [country]='newcountry'></country-item>
+    <pagination [totalItems]="30" style="display: flex;justify-content: center;"></pagination>
+</div>
